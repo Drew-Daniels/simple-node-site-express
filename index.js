@@ -1,8 +1,10 @@
 // module imports
 const http = require('http');
 const fs = require('fs');
+const express = require('express');
 const { pipeline } = require('stream');
 
+const app = express();
 const port = 8080;
 
 function requestHandler(req, res) {
